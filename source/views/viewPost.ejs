@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Feed To Win</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Noto+Serif|Charmonman" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="../css/viewPost.css" rel="stylesheet">
+    <style>
+        html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    right:0; 
+    left:0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    background: white;
+}
+
+.nav-bar ul{
+    width: 40%;
+    margin-top: 25px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 60%;
+    margin-top: -15px;
+    margin-left: 30px;
+    font-family: 'Charmonman', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.logo p{
+    width: 200px;
+    cursor: pointer;
+    word-spacing: 10px;
+}
+
+.nav-bar ul li a{
+    margin: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-scroll{
+    box-shadow: 0px 5px 8px gray;
+}
+
+.nav-bar ul li a:hover{
+    cursor: pointer;
+    color: #445d84;
+}
+
+main{
+    margin-top: 80px;
+    width: 100%;
+}
+.cover{
+    margin-top: 200px;
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    font-family: 'Charmonman', cursive;
+}
+
+.cover h1{
+    font-size: 50px;
+}
+.cover p{
+    font-size: 30px;
+    font-weight: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.ads1{
+    width: 15%;
+    height: 100%;
+}
+.ads2{
+    width: 15%;
+}
+.post-wrap{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    text-align: end;
+    height: 150px;
+    width: 100%;
+    background: #22313F;
+    font-weight: solid;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.copy{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    justify-content: flex-end;
+}
+
+.nav-footer a{
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.fab{
+    color: #f4f7f6;
+}
+    </style>
+</head>
+<body>
+    <!-- Name blog: Feed To Win-->
+    <header class="header nav-bar-scroll">
+        <div class="logo">
+            <p id="logo">Feed To Win</p>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/category/dev">Dev</a></li>
+                <li><a href="/category/bullshit">Bullshit</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="ads1"></div>
+            <div class="post-wrap">
+                <div class="title">
+                    <h1><%=posts.title%></h1>
+                </div>    
+                <div class="content"><%=posts.content%></div>
+                                            
+            </div>
+            <div class="ads2"></div>
+        </div>
+    </main>
+    <!-- Contact and some information....-->
+    <footer>
+        <nav class="nav-footer">
+        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x"></i></a>
+        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        </nav>
+        <div class="copy">
+            <p>&copy 2018 write by Nguyen Van Nhi Hieu</p>
+        </div>
+    </footer>       
+    
+</body>
+</html>

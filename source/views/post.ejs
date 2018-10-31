@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/test.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="posts" action="/post" method="POST" name="posts">
+        <label>Title</label>
+        <input type="text" name="title" id="title">
+        <br>
+        <br>
+        <br>
+        <label>Content</label>
+        
+        <textarea type="text" name="content" id = "content"></textarea>
+        <br><br>
+        <select name="category">
+            <option value="dev">Dev</option>
+            <option value="bullshit">Bullshit</option>
+        </select>
+        <button type="submit" id="btn" name="btn">Submit</button>
+    </form>
+</body>
+</html>
